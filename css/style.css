@@ -37,6 +37,10 @@ a{
   color: rgba(0, 0, 0, 0.3);
 }
 
+.main-navigation .site-navigation-active{
+  color: #766357;
+}
+
 .intro{
   text-align: center;
 
@@ -220,6 +224,153 @@ a{
 
   background-color: #5496bd;
 }
+
+.filters{
+  color: #ffffff;
+
+  background-color:#79a7cb;
+  background-image: url("../img/decorative/filter-background.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filters fieldset{
+  border: none;
+}
+
+.filters legend{
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.filters ul{
+  list-style: none;
+}
+
+.price-filter input{
+  color: #ffffff;
+
+  background-color: transparent;
+  border: solid 2px #ffffff;
+}
+
+.filter-btn{
+  font-weight: 400;
+
+  background-color: transparent;
+  border: solid 2px #ffffff;
+}
+
+.hotels-result{
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+
+  background-color: #fefefe;
+}
+
+.sort span{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.sort-type h2{
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sort-type a{
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: dotted 1px #81b3d2;
+}
+
+.sort-type a:hover,
+.sort-type a:focus{
+  color: #81b3d2;
+}
+
+.sort-type a:active{
+  color: #000000;
+  border: none;
+}
+
+.sort-type .sort-type-active{
+  color: #81b3d2;
+  border: none;
+}
+
+.sort-type-buttons svg{
+  fill: #cacaca;
+}
+
+.sort-type-buttons a:hover svg,
+.sort-type-buttons a:focus svg{
+  fill: #000000;
+}
+
+.sort-type-buttons a:active svg{
+  fill: #81b3d2;
+}
+
+.sort-descending svg{
+  fill: #81b3d2;
+}
+
+.hotels-info{
+  color: #333333;
+
+  background-color: #ffffff;
+}
+
+.hotel-name h3{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.hotel-name:hover h3,
+.hotel-name:focus h3{
+  color: #81b3d2;
+} 
+
+.hotel-name:active h3{
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.about-hotel-btn:hover,
+.about-hotel-btn:focus{
+  background-color: #669ec0;
+}
+
+.about-hotel-btn:active{
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #5496bd;
+}
+
+.booking-hotel-btn{
+  background-color: #766357;
+}
+
+.booking-hotel-btn:hover,
+.booking-hotel-btn:focus{
+  background-color: #604e43;
+}
+
+.booking-hotel-btn:active{
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #503e33;
+}
+
+.rating span{
+  color: #666666;
+
+  background-color: #f2f2f2;
+}
+
 .main-footer{
   line-height: 26px;
   text-align: center;
