@@ -91,7 +91,7 @@
               Дата заезда:
               <input class="js-calendar-toggle" type="text" name="arrival-date" placeholder="ДД месяц ГГГГ" value="24 апреля 2017">
               <p class="visually-hidden">Выбрать дату заезда</p>
-              <button class="button calendar-btn js-calendar-toggle" type="button">
+              <button class="button btn-for-input js-calendar-toggle" type="button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22">
                   <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"
                   />
@@ -105,7 +105,7 @@
               Дата выезда:
               <input class="js-calendar-toggle" type="text" name="departure-date" placeholder="ДД месяц ГГГГ" value="4 июля 2017">
               <p class="visually-hidden">Выбрать дату выезда</p>
-              <button class="button calendar-btn js-calendar-toggle" type="button">
+              <button class="button btn-for-input js-calendar-toggle" type="button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22">
                   <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"
                   />
@@ -119,14 +119,14 @@
           <div class="input-person-number">
             <label for="adults-number">Взрослые:</label>
             <p class="visually-hidden">Уменьшить количество взрослых</p>
-            <button class="reduce-number-btn" type="button">
+            <button class="button btn-for-input reduce-number-btn" type="button">
               <svg width="13" height="13">
                 <line x1="1" y1="8" x2="13" y2="8" stroke="#000000" stroke-width="3" />
               </svg>
             </button>
             <input type="number" name="adults-number" id="adults-number" value="2" min="1" max="20">
             <p class="visually-hidden">Увеличить количество взрослых</p>
-            <button class="increase-number-btn" type="button">
+            <button class="button btn-for-input increase-number-btn" type="button">
               <svg width="13" height="13">
                 <line x1="1" y1="8" x2="13" y2="8" stroke="#000000" stroke-width="3" />
                 <line x1="7" y1="2" x2="7" y2="13" stroke="#000000" stroke-width="3" />
@@ -134,26 +134,26 @@
             </button>
             <label for="children-number">Дети:</label>
             <p class="visually-hidden">Уменьшить количество детей</p>
-            <button class="reduce-number-btn" type="button">
+            <button class="button btn-for-input reduce-number-btn" type="button">
               <svg width="13" height="13">
                 <line x1="1" y1="8" x2="13" y2="8" stroke="#000000" stroke-width="3" />
               </svg>
             </button>
             <input type="number" name="children-number" id="children-number" value="0" min="0" max="20">
             <p class="visually-hidden">Увеличить количество детей</p>
-            <button class="increase-number-btn" type="button">
+            <button class="button btn-for-input increase-number-btn" type="button">
               <svg width="13" height="13">
                 <line x1="1" y1="8" x2="13" y2="8" stroke="#000000" stroke-width="3" />
                 <line x1="7" y1="2" x2="7" y2="13" stroke="#000000" stroke-width="3" />
               </svg>
             </button>
           </div>
-          <button class="button" type="submit">Найти</button>
+          <button class="button search-btn" type="submit">Найти</button>
         </form>
       </div>
       <section class="map">
         <h2 class="visually-hidden">Седона на карте</h2>
-        <img src="img/content/map.png" width="1200" height="473" alt="Местоположение Седоны на карте">
+        <img src="img/content/map.png" width="1200" height="593" alt="Местоположение Седоны на карте">
       </section>
     </main>
 
