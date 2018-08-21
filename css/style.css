@@ -28,11 +28,12 @@ a{
   color: #000000;
 }
 
-.main-navigation a:hover{
+.main-navigation a:hover,
+.main-navigation a:focus{
   color: #81b3d2;
 }
 
-.main-navigation a:focus{
+.main-navigation a:active{
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -170,7 +171,6 @@ a{
 }
 
 .modal-hotels input:focus,
-.modal-hotels input:active,
 .modal-hotels .btn-for-input:focus,
 .modal-hotels .btn-for-input:active{
   background-color: transparent;
@@ -206,4 +206,50 @@ a{
 .modal-hotels .search-btn{
   font-size: 21px;
   line-height: 26px;
+}
+
+.modal-hotels .search-btn:hover,
+.modal-hotels .search-btn:focus{
+  color: #ffffff;
+
+  background-color: #669ec0;
+}
+
+.modal-hotels .search-btn:active{
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #5496bd;
+}
+.main-footer{
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
+
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.main-footer span{
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.footer-social ul{
+  list-style: none;
+}
+
+.social-button{
+  color: #000000;
+}
+
+.footer-copyright svg{
+  fill: #231f20;
+}
+
+.footer-copyright a:hover svg,
+.footer-copyright a:focus svg{
+  fill: #81b3d2;
+}
+
+.footer-copyright a:active svg{
+  fill: #bdbbbc;
 }
