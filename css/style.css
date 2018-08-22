@@ -185,7 +185,7 @@ a{
   fill: #a9a9a9;
 }
 
-.btn-for-input svg line{
+.btn-for-input line{
   stroke: #a9a9a9;
 }
 
@@ -194,8 +194,8 @@ a{
   fill: #000000;
 }
 
-.btn-for-input:hover svg line,
-.btn-for-input:focus svg line{
+.btn-for-input:hover line,
+.btn-for-input:focus line{
   stroke: #000000;
 }
 
@@ -203,7 +203,7 @@ a{
   fill: #81b3d2;
 }
 
-.btn-for-input:active svg line{
+.btn-for-input:active line{
   stroke: #81b3d2;
 }
 
@@ -300,16 +300,16 @@ a{
   border: none;
 }
 
-.sort-type-buttons svg{
+.sort-btn svg{
   fill: #cacaca;
 }
 
-.sort-type-buttons a:hover svg,
-.sort-type-buttons a:focus svg{
+.sort-btn:hover svg,
+.sort-btn:focus svg{
   fill: #000000;
 }
 
-.sort-type-buttons a:active svg{
+.sort-btn:active svg{
   fill: #81b3d2;
 }
 
@@ -392,15 +392,15 @@ a{
   color: #000000;
 }
 
-.footer-copyright svg{
+.copyright-link svg{
   fill: #231f20;
 }
 
-.footer-copyright a:hover svg,
-.footer-copyright a:focus svg{
+.copyright-link:hover svg,
+.copyright-link:focus svg{
   fill: #81b3d2;
 }
 
-.footer-copyright a:active svg{
+.copyright-link:active svg{
   fill: #bdbbbc;
 }
