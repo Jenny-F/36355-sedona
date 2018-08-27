@@ -12,11 +12,23 @@ body{
   background-color: #f2f2f2;
 }
 
+.container{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main-header{
+  margin: 0;
+  padding: 0;
+}
+
 a{
   text-decoration: none;
 }
 
 .main-navigation{
+  width: 100%;
+
   line-height: 26px;
   font-weight: 700;
   color: #000000;
@@ -42,6 +54,9 @@ a{
 }
 
 .intro{
+  margin: 0;
+  padding: 0;
+
   text-align: center;
 
   background-color: #79a7cb;
@@ -51,6 +66,19 @@ a{
 }
 
 .reasons{
+  margin: 0;
+
+  color: #333333;
+
+  background-color: #ffffff;
+}
+
+.reasons-intro{
+  width: 490px;
+  margin: 0 auto;
+  padding-top: 61px;
+  padding-bottom: 56px;
+
   text-align: center;
   color: #333333;
 
@@ -68,6 +96,7 @@ a{
   color: #ffffff;
 
   background-color: #81b3d2;
+  border: 1px solid transparent;
 }
 
 .reason-item h3{
@@ -75,10 +104,30 @@ a{
   font-weight: 700;
 }
 
+.reason-text{
+  margin-top: 45px;
+  margin-bottom: 63px;
+
+  text-align: center;
+}
+
 .features{
   color: #333333;
 
   background-color: #ffffff;
+}
+
+.features-block{
+  padding-top: 60px;
+  padding-bottom: 83px;
+
+  display: flex;
+}
+
+.features-item{
+  width: 400px;
+
+  text-align: center;
 }
 
 .features h4{
@@ -88,9 +137,21 @@ a{
 }
 
 .block-reasons{
+  margin: 0;
+  padding-top: 45px;
+  padding-bottom: 38px;
+
   color: #333333;
 
   background-color: #eeeeee;
+
+  display: flex;
+}
+
+.block-reasons-text{
+  width: 400px;
+
+  text-align: center;
 }
 
 .block-reasons h3{
@@ -100,6 +161,10 @@ a{
 }
 
 .hotels{
+  margin: 0;
+  padding: 0;
+  padding-top: 52px;
+
   text-align: center;
   color: #333333;
 
@@ -151,6 +216,8 @@ a{
 }
 
 .modal-hotels{
+  margin: 0;
+
   font-weight: 700;
   color: #000000;
 
@@ -371,17 +438,35 @@ a{
   background-color: #f2f2f2;
 }
 
+.map{
+  margin: 0;
+  padding: 0;
+}
+
 .main-footer{
+  margin: 0;
+  padding-top: 36px;
+
   line-height: 26px;
   text-align: center;
   color: #000000;
 
   background-color: rgba(255, 255, 255, 0.9);
+
+  display: flex;
+  align-items: center;
 }
 
 .main-footer span{
+  width: 400px;
+  margin: 0;
+
   font-size: 21px;
   font-weight: 700;
+}
+
+.footer-social{
+  width: 400px;
 }
 
 .footer-social ul{
@@ -390,6 +475,11 @@ a{
 
 .social-button{
   color: #000000;
+}
+
+.footer-copyright{
+  width: 400px;
+  margin: 0;
 }
 
 .copyright-link svg{
