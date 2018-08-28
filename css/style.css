@@ -12,18 +12,35 @@ body{
   background-color: #f2f2f2;
 }
 
+a{
+  text-decoration: none;
+}
+
+.visually-hidden:not(:focus):not(:active){
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container{
-  width: 1200px;
+  max-width: 1200px;
+  min-width: 768px;
   margin: 0 auto;
 }
 
 .main-header{
   margin: 0;
   padding: 0;
-}
-
-a{
-  text-decoration: none;
 }
 
 .main-navigation{
@@ -55,7 +72,7 @@ a{
 
 .intro{
   margin: 0;
-  padding: 0;
+  padding-top: 76px;
 
   text-align: center;
 
@@ -64,6 +81,7 @@ a{
   background-position: top center;
   background-repeat: no-repeat;
 }
+
 
 .reasons{
   margin: 0;
@@ -93,10 +111,12 @@ a{
 }
 
 .reason-item{
+  padding-top: 46px;
+  padding-bottom: 60px;
+
   color: #ffffff;
 
   background-color: #81b3d2;
-  border: 1px solid transparent;
 }
 
 .reason-item h3{
@@ -105,10 +125,33 @@ a{
 }
 
 .reason-text{
-  margin-top: 45px;
-  margin-bottom: 63px;
+  width: 305px;
 
   text-align: center;
+}
+
+.reason-item-1{
+  background-image: url("../img/decorative/photo-reason-1.jpg");
+  background-repeat: no-repeat;
+  background-size: 800px 401px;
+  background-position: right center;
+}
+
+.reason-item-1 .reason-text{
+  margin-left: 48px;
+  margin-right: auto;
+}
+
+.reason-item-2{ 
+  background-image: url("../img/decorative/photo-reason-2.jpg");
+  background-repeat: no-repeat;
+  background-size: 800px 401px;
+  background-position: left center;
+}
+
+.reason-item-2 .reason-text{
+  margin-right: 48px;
+  margin-left: auto;
 }
 
 .features{
@@ -118,14 +161,15 @@ a{
 }
 
 .features-block{
-  padding-top: 60px;
-  padding-bottom: 83px;
+  padding-top: 160px;
+  padding-bottom: 85px;
 
   display: flex;
 }
 
 .features-item{
   width: 400px;
+  padding: 0 57px;
 
   text-align: center;
 }
@@ -139,7 +183,7 @@ a{
 .block-reasons{
   margin: 0;
   padding-top: 45px;
-  padding-bottom: 38px;
+  padding-bottom: 60px;
 
   color: #333333;
 
@@ -150,6 +194,7 @@ a{
 
 .block-reasons-text{
   width: 400px;
+  padding: 0 69px;
 
   text-align: center;
 }
@@ -193,6 +238,8 @@ a{
 
   background-color: #81b3d2;
   border: none;
+
+  cursor: pointer;
 }
 
 .search-hotel-btn{
@@ -216,6 +263,7 @@ a{
 }
 
 .modal-hotels{
+  display: none;
   margin: 0;
 
   font-weight: 700;
@@ -415,8 +463,7 @@ a{
 }
 
 .hotels-item{
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 73px;
 
   display: flex;
 }
