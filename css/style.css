@@ -305,7 +305,7 @@ a{
 .hotels{
   margin: 0;
   padding: 0;
-  padding-top: 52px;
+  padding-top: 50px;
 
   text-align: center;
   color: #333333;
@@ -321,6 +321,11 @@ a{
 }
 
 .hotels p{
+  width: 450px;
+  margin: 0 auto;
+  margin-top: 25px;
+  padding-bottom: 50px;
+
   line-height: 24px;
 }
 
@@ -340,6 +345,9 @@ a{
 }
 
 .search-hotel-btn{
+  width: 568px;
+  height: 86px;
+  padding: auto auto;
   font-size: 21px;
   line-height: 26px;
   color: #ffffff;
@@ -625,7 +633,7 @@ a{
 
 .main-footer{
   margin: 0;
-  padding-top: 36px;
+  padding: 36px 0;
 
   line-height: 26px;
   text-align: center;
@@ -650,16 +658,77 @@ a{
 }
 
 .footer-social ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 151px;
+  margin: 0 auto;
+  padding: 0;
+
   list-style: none;
 }
 
-.social-button{
+.social-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 48px;
   color: #000000;
+
+  background-color: #81b3d2;
+}
+
+.social-btn::before{
+  content: "";
+
+  width: 20px;
+  height: 22px;
+  background-image: url("../img/icons/twitter-icon.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+li:first-child .social-btn::before{
+  background-image: url("../img/icons/twitter-icon.svg");
+}
+
+li:nth-child(2) .social-btn::before{
+  background-image: url("../img/icons/fb-icon.svg");
+}
+
+li:last-child .social-btn::before{
+  background-image: url("../img/icons/youtube-icon.svg");
+}
+
+.social-btn:hover,
+.social-btn:focus{
+  background-color: #669ec0;
+}
+
+.social-btn:active{
+  background-color: #5496bd;
+}
+
+.social-btn:active::before{
+  opacity: 0.3;
 }
 
 .footer-copyright{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 400px;
   margin: 0;
+}
+
+.footer-copyright span{
+  width: auto;
+  padding-right: 8px;
+
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
 }
 
 .copyright-link svg{
