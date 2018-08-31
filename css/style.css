@@ -36,25 +36,44 @@ a{
   max-width: 1200px;
   min-width: 768px;
   margin: 0 auto;
+
+  box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
 }
 
 .main-header{
+  position: relative;
   margin: 0;
   padding: 0;
-}
-
-.main-navigation{
-  width: 100%;
-
-  line-height: 26px;
-  font-weight: 700;
-  color: #000000;
 
   background-color: #ffffff;
 }
 
+.main-header-logo{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.main-navigation{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+  width: 88%;
+  padding: 15px 0;
+  
+  margin: 0 auto;
+  
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
 .main-navigation a{
   color: #000000;
+}
+
+.main-navigation a:nth-child(2){
+  margin-right: 20%;
 }
 
 .main-navigation a:hover,
@@ -73,15 +92,16 @@ a{
 .intro{
   margin: 0;
   padding-top: 76px;
+  padding-bottom: 77px;
 
   text-align: center;
 
   background-color: #79a7cb;
-  background-image: url("../img/decorative/intro-background.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
+  background-image: url("../img/decorative/intro-polygon.svg"), url("../img/decorative/intro-background.jpg");
+  background-position: 50% 100%, 0 30%;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 100% 57px, 100%;
 }
-
 
 .reasons{
   margin: 0;
@@ -94,7 +114,7 @@ a{
 .reasons-intro{
   width: 490px;
   margin: 0 auto;
-  padding-top: 61px;
+  padding-top: 41px;
   padding-bottom: 56px;
 
   text-align: center;
