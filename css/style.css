@@ -97,7 +97,7 @@ a{
   text-align: center;
 
   background-color: #79a7cb;
-  background-image: url("../img/decorative/intro-polygon.svg"), url("../img/decorative/intro-background.jpg");
+  background-image: url("../img/decorative/banner-bottom-shape.png"), url("../img/decorative/intro-background.jpg");
   background-position: 50% 100%, 0 30%;
   background-repeat: no-repeat, no-repeat;
   background-size: 100% auto, 100%;
