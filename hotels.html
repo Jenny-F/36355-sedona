@@ -63,23 +63,26 @@
               </li>
             </ul>
           </fieldset>
-          <div class="price-filter">
-            <p>Стоимость в сутки (Р):</p>
-            <label>
-              От
-              <input type="text" name="min-price" value="0">
-            </label>
-            <label>
-              До
-              <input type="text" name="max=price" value="3000">
-            </label>
-            <div class="range">
-              <div class="bar"></div>
-              <div class="slider slider-min"></div>
-              <div class="slider slider-max"></div>
+
+          <div class="filter-range">
+            <div class="filter-range-title">Стоимость в сутки (р):</div>
+            <div class="price-controls">
+              <label class="min-price">от
+                <input type="text" name="min-price" value="0">
+              </label>
+              <label class="max-price">до
+                <input type="text" name="max-price" value="3000">
+              </label>
             </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+            <button class="btn-transparent" type="submit">Показать</button>
           </div>
-          <button class="button filter-btn" type="submit">Показать</button>
         </form>
       </section>
       <section class="hotels-result">
@@ -110,22 +113,26 @@
           </a>
         </div>
       </section>
-      <section class="hotels-info">
+      <section class="hotels-list">
         <h2 class="visually-hidden">Информация по гостиницам</h2>
         <article class="hotels-item">
           <a href="#">
             <img src="img/content/photo-hotel-1.jpg" width="135" height="90" alt="Фото Amara Resort and Spa">
           </a>
-          <a class="hotel-name" href="#">
-            <h3>Amara Resort&amp;Spa</h3>
-          </a>
-          <div class="about-hotel">
-            <span>Гостиница</span>
-            <a class="button about-hotel-btn" href="#">Подробнее</a>
-          </div>
-          <div class="booking-hotel">
-            <span>от 4000 Р.</span>
-            <a class="button booking-hotel-btn" href="#">Забронировать</a>
+          <div class="hotel-info">
+            <a class="hotel-name" href="#">
+              <h3>Amara Resort&amp;Spa</h3>
+            </a>
+            <div class="short-info">
+              <div class="about-hotel">
+                <span>Гостиница</span>
+                <a class="button about-hotel-btn" href="#">Подробнее</a>
+              </div>
+              <div class="booking-hotel">
+                <span>от 4000 Р.</span>
+                <a class="button booking-hotel-btn" href="#">Забронировать</a>
+              </div>
+            </div>
           </div>
           <div class="rating">
             <span>Рейтинг: 8,5</span>
@@ -177,13 +184,19 @@
       <div class="footer-social">
         <ul>
           <li>
-            <a href="#">Twitter</a>
+            <a class="social-btn" href="#">
+              <span class="visually-hidden">Twitter</span>
+            </a>
           </li>
           <li>
-            <a href="#">Facebook</a>
+            <a class="social-btn" href="#">
+              <span class="visually-hidden">Facebook</span>
+            </a>
           </li>
           <li>
-            <a href="#">YouTube</a>
+            <a class="social-btn" href="#">
+              <span class="visually-hidden">YouTube</span>
+            </a>
           </li>
         </ul>
       </div>
