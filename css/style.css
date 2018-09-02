@@ -753,9 +753,13 @@ a{
 }
 
 .hotels-item{
-  padding: 30px 73px;
+  padding: 25px 73px;
+  padding-top: 30px;
 
   display: flex;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .hotels-item img{
@@ -770,8 +774,8 @@ a{
 .hotel-name h3{
   padding: 0;
   margin: 0;
-  margin-top: -11px;
-  margin-bottom: 14px;
+  margin-top: -5px;
+  margin-bottom: 11px;
 
   font-size: 21px;
   line-height: 26px;
@@ -793,7 +797,7 @@ a{
 }
 
 .short-info span{
-  margin-bottom: 14px;
+  margin-bottom: 11px;
 }
 
 .about-hotel{
@@ -802,8 +806,6 @@ a{
 
   margin-right: 5px;
 }
-
-
 
 .about-hotel-btn{
   box-sizing: border-box;
@@ -847,10 +849,44 @@ a{
 }
 
 .rating{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+
   margin-left: auto;
 }
 
+.rating::before{
+  content: "";
+
+  position: absolute;
+  height: 17px;
+  top: 0;
+
+  background-image: url("../img/icons/star.svg");
+  background-position: 0 0;
+  background-repeat: space;
+}
+
+.hotels-item:first-of-type .rating::before{
+  width: 90px;
+}
+
+.hotels-item:nth-of-type(2) .rating::before{
+  width: 65px;
+}
+
+.hotels-item:last-of-type .rating::before{
+  width: 40px;
+}
+
 .rating span{
+  width: 85px;
+  padding: 3px;
+  padding-left: 15px;
+  padding-right: 13px;
   color: #666666;
 
   background-color: #f2f2f2;
