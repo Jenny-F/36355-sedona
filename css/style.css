@@ -56,7 +56,6 @@ a{
 
 .main-navigation{
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap; 
   width: 88%;
   padding: 15px 0;
@@ -72,8 +71,16 @@ a{
   color: #000000;
 }
 
+.main-navigation a:nth-child(1){
+  margin-right: 14%;
+}
+
 .main-navigation a:nth-child(2){
-  margin-right: 20%;
+  margin-right: 36.5%;
+}
+
+.main-navigation a:nth-child(3){
+  margin-right: auto;
 }
 
 .main-navigation a:hover,
