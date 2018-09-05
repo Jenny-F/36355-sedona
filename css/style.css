@@ -105,10 +105,10 @@ input[type="checkbox"].visually-hidden{
   text-align: center;
 
   background-color: #79a7cb;
-  background-image: url("../img/decorative/banner-bottom-shape.png"), url("../img/decorative/intro-background.jpg");
+  background-image: url("../img/decorative/intro-polygon.svg"), url("../img/decorative/intro-background.jpg");
   background-position: 50% 100%, 0 30%;
   background-repeat: no-repeat, no-repeat;
-  background-size: 100% auto, 100%;
+  background-size: 100% 57px, 100%;
 }
 
 .reasons{
@@ -373,9 +373,13 @@ input[type="checkbox"].visually-hidden{
 }
 
 .modal-hotels{
+  position: absolute;
+  left: 50%;
+
   box-sizing: border-box;
   width: 568px;
   margin: 0 auto;
+  margin-left: -284px;
   padding: 55px;
 
   font-weight: 700;
@@ -406,6 +410,7 @@ input[type="checkbox"].visually-hidden{
   box-sizing: border-box;
   width: 346px;
   padding: 6px 15px;
+  padding-right: 30px;
 }
 
 .input-person-number input{
