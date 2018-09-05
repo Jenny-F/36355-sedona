@@ -155,7 +155,7 @@ input[type="checkbox"].visually-hidden{
   flex-direction: column;
   align-items: center;  
   margin-top: 46px;
-  margin-bottom: 60px;
+  margin-bottom: 57px;
 
   width: calc(100% / 3);
 
@@ -991,7 +991,7 @@ input[type="checkbox"].visually-hidden{
 }
 
 .hotels-item:first-of-type .stars{
-  width: 90px;
+  width: 89px;
 }
 
 .hotels-item:nth-of-type(2) .stars{
