@@ -373,13 +373,25 @@ input[type="checkbox"].visually-hidden{
 }
 
 .modal-hotels{
-  display: none;
-  margin: 0;
+  box-sizing: border-box;
+  width: 568px;
+  margin: 0 auto;
+  padding: 55px;
 
   font-weight: 700;
   color: #000000;
 
   background-color: #ffffff;
+}
+
+.search-hotel-form{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.person-number{
+  display: flex;
 }
 
 .modal-hotels input{
@@ -390,18 +402,86 @@ input[type="checkbox"].visually-hidden{
   border: none;
 }
 
-.modal-hotels .btn-for-input{
-  background-color: #f2f2f2;
+.input-date input{
+  box-sizing: border-box;
+  width: 346px;
+  padding: 6px 15px;
 }
 
-.modal-hotels input:hover,
-.modal-hotels .btn-for-input:hover{
+.input-person-number input{
+  box-sizing: border-box;
+  width: 115px;
+  padding: 6px 45px;
+
+  text-align: center;
+}
+
+.input-date{
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.input-person-number{
+  position: relative;
+  margin-bottom: 52px;
+}
+
+.input-date:first-of-type label{
+  margin-right: 20px;
+}
+
+.input-date:nth-of-type(2) label{
+  margin-right: 16px;
+}
+
+.input-adults-number label{
+  margin-right: 38px;
+}
+
+.btn-for-input{
+  position: absolute;
+
+  background-color: transparent;
+}
+
+.input-date .btn-for-input{
+  top: 6px;
+  right: 0;
+}
+
+.input-adults-number .reduce-number-btn{
+  top: 8px;
+  left: 120px;
+}
+
+.input-adults-number .increase-number-btn{
+  top: 8px;
+  right: 10px;
+}
+
+.input-children-number .reduce-number-btn{
+  top: 8px;
+  left: 72px;
+}
+
+.input-children-number .increase-number-btn{
+  top: 8px;
+  right: 8px;
+}
+
+.input-adults-number{
+  margin-right: 50px;
+}
+
+.input-children-number label{
+  margin-right: 23px;
+}
+
+.modal-hotels input:hover{
   background-color: #ebebeb;
 }
 
-.modal-hotels input:focus,
-.modal-hotels .btn-for-input:focus,
-.modal-hotels .btn-for-input:active{
+.modal-hotels input:focus{
   background-color: transparent;
   border: solid 2px #e5e5e5;
 }
@@ -432,7 +512,17 @@ input[type="checkbox"].visually-hidden{
   stroke: #81b3d2;
 }
 
+.person-number input::-webkit-inner-spin-button,
+.person-number input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.person-number input{
+  -moz-appearance: textfield;
+}
+
 .modal-hotels .search-btn{
+  padding: 16px 30px;
   font-size: 21px;
   line-height: 26px;
 }
