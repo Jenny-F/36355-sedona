@@ -87,7 +87,8 @@
       <section class="hotels">
         <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
         <span>Заинтересовались?</span>
-        <p>Укажите предпологаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <p>Укажите предпологаемые даты поездки,
+          <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button class="button search-hotel-btn" type="button">Поиск гостиницы в Седоне</button>
       </section>
       <div class="modal modal-hotels">
@@ -106,7 +107,8 @@
                 />
               </svg>
             </button>
-
+          </div>
+          <div class="input-date">
             <label for="departure-date">
               Дата выезда:
             </label>
@@ -122,37 +124,41 @@
             </button>
           </div>
 
-          <div class="input-person-number">
-            <label for="adults-number">Взрослые:</label>
-            <p class="visually-hidden">Уменьшить количество взрослых</p>
-            <button class="button btn-for-input reduce-number-btn" type="button">
-              <svg width="13" height="13">
-                <line x1="1" y1="8" x2="13" y2="8" stroke="#000000" stroke-width="3" />
-              </svg>
-            </button>
-            <input type="number" name="adults-number" id="adults-number" value="2" min="1" max="20">
-            <p class="visually-hidden">Увеличить количество взрослых</p>
-            <button class="button btn-for-input increase-number-btn" type="button">
-              <svg width="13" height="13">
-                <line x1="1" y1="8" x2="13" y2="8" stroke="#000000" stroke-width="3" />
-                <line x1="7" y1="2" x2="7" y2="13" stroke="#000000" stroke-width="3" />
-              </svg>
-            </button>
-            <label for="children-number">Дети:</label>
-            <p class="visually-hidden">Уменьшить количество детей</p>
-            <button class="button btn-for-input reduce-number-btn" type="button">
-              <svg width="13" height="13">
-                <line x1="1" y1="8" x2="13" y2="8" stroke="#000000" stroke-width="3" />
-              </svg>
-            </button>
-            <input type="number" name="children-number" id="children-number" value="0" min="0" max="20">
-            <p class="visually-hidden">Увеличить количество детей</p>
-            <button class="button btn-for-input increase-number-btn" type="button">
-              <svg width="13" height="13">
-                <line x1="1" y1="8" x2="13" y2="8" stroke="#000000" stroke-width="3" />
-                <line x1="7" y1="2" x2="7" y2="13" stroke="#000000" stroke-width="3" />
-              </svg>
-            </button>
+          <div class="person-number">
+            <div class="input-person-number input-adults-number">
+              <label for="adults-number">Взрослые:</label>
+              <p class="visually-hidden">Уменьшить количество взрослых</p>
+              <button class="button btn-for-input reduce-number-btn" type="button">
+                <svg width="13" height="13">
+                  <line x1="1" y1="8" x2="13" y2="8" stroke="#000000" stroke-width="3" />
+                </svg>
+              </button>
+              <input type="number" name="adults-number" id="adults-number" value="2" min="1" max="20">
+              <p class="visually-hidden">Увеличить количество взрослых</p>
+              <button class="button btn-for-input increase-number-btn" type="button">
+                <svg width="13" height="14">
+                  <line x1="1" y1="8" x2="13" y2="8" stroke="#000000" stroke-width="3" />
+                  <line x1="7" y1="2" x2="7" y2="14" stroke="#000000" stroke-width="3" />
+                </svg>
+              </button>
+            </div>
+            <div class="input-person-number input-children-number">
+              <label for="children-number">Дети:</label>
+              <p class="visually-hidden">Уменьшить количество детей</p>
+              <button class="button btn-for-input reduce-number-btn" type="button">
+                <svg width="13" height="13">
+                  <line x1="1" y1="8" x2="13" y2="8" stroke="#000000" stroke-width="3" />
+                </svg>
+              </button>
+              <input type="number" name="children-number" id="children-number" value="0" min="0" max="20">
+              <p class="visually-hidden">Увеличить количество детей</p>
+              <button class="button btn-for-input increase-number-btn" type="button">
+                <svg width="13" height="14">
+                  <line x1="1" y1="8" x2="13" y2="8" stroke="#000000" stroke-width="3" />
+                  <line x1="7" y1="2" x2="7" y2="14" stroke="#000000" stroke-width="3" />
+                </svg>
+              </button>
+            </div>
           </div>
           <button class="button search-btn" type="submit">Найти</button>
         </form>
