@@ -394,41 +394,26 @@ input[type="checkbox"].visually-hidden{
   flex-wrap: wrap;
 }
 
-.person-number{
-  display: flex;
-}
-
 .modal-hotels input{
   font: inherit;
   line-height: 26px;
 
   background-color: #f2f2f2;
-  border: none;
+  border: solid 2px transparent;
 }
 
-.input-date input{
-  box-sizing: border-box;
-  width: 346px;
-  padding: 6px 15px;
-  padding-right: 30px;
+.modal-hotels input:hover{
+  background-color: #ebebeb;
 }
 
-.input-person-number input{
-  box-sizing: border-box;
-  width: 115px;
-  padding: 6px 45px;
-
-  text-align: center;
+.modal-hotels input:focus{
+  background-color: transparent;
+  border: solid 2px #e5e5e5;
 }
 
 .input-date{
   position: relative;
   margin-bottom: 30px;
-}
-
-.input-person-number{
-  position: relative;
-  margin-bottom: 52px;
 }
 
 .input-date:first-of-type label{
@@ -439,56 +424,17 @@ input[type="checkbox"].visually-hidden{
   margin-right: 16px;
 }
 
-.input-adults-number label{
-  margin-right: 38px;
+.input-date input{
+  box-sizing: border-box;
+  width: 346px;
+  padding: 6px 15px;
+  padding-right: 30px;
 }
 
 .btn-for-input{
   position: absolute;
 
   background-color: transparent;
-}
-
-.input-date .btn-for-input{
-  top: 6px;
-  right: 0;
-}
-
-.input-adults-number .reduce-number-btn{
-  top: 8px;
-  left: 120px;
-}
-
-.input-adults-number .increase-number-btn{
-  top: 8px;
-  right: 10px;
-}
-
-.input-children-number .reduce-number-btn{
-  top: 8px;
-  left: 72px;
-}
-
-.input-children-number .increase-number-btn{
-  top: 8px;
-  right: 8px;
-}
-
-.input-adults-number{
-  margin-right: 50px;
-}
-
-.input-children-number label{
-  margin-right: 23px;
-}
-
-.modal-hotels input:hover{
-  background-color: #ebebeb;
-}
-
-.modal-hotels input:focus{
-  background-color: transparent;
-  border: solid 2px #e5e5e5;
 }
 
 .btn-for-input svg{
@@ -515,6 +461,60 @@ input[type="checkbox"].visually-hidden{
 
 .btn-for-input:active line{
   stroke: #81b3d2;
+}
+
+.input-date .btn-for-input{
+  top: 6px;
+  right: 0;
+}
+
+.person-number{
+  display: flex;
+}
+
+.input-person-number{
+  position: relative;
+  margin-bottom: 52px;
+}
+
+.input-person-number input{
+  box-sizing: border-box;
+  width: 115px;
+  padding: 6px 45px;
+
+  text-align: center;
+}
+
+.input-adults-number{
+  margin-right: 50px;
+}
+
+.input-adults-number label{
+  margin-right: 38px;
+}
+
+.input-adults-number .reduce-number-btn{
+  top: 8px;
+  left: 120px;
+}
+
+.input-adults-number .increase-number-btn{
+  top: 8px;
+  right: 10px;
+}
+
+.input-children-number label{
+  margin-right: 23px;
+}
+
+.input-children-number .reduce-number-btn{
+  top: 8px;
+  left: 72px;
+}
+
+.input-children-number .increase-number-btn{
+  top: 8px;
+  right: 8px;
 }
 
 .person-number input::-webkit-inner-spin-button,
