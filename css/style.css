@@ -401,6 +401,7 @@ input[type="checkbox"].visually-hidden{
 .modal-hotels{
   position: absolute;
   left: 50%;
+  overflow: hidden;
 
   -webkit-box-sizing: border-box;
 
@@ -408,12 +409,21 @@ input[type="checkbox"].visually-hidden{
   width: 568px;
   margin: 0 auto;
   margin-left: -284px;
-  padding: 55px;
+  padding: 0;
+  max-height: 0;
 
   font-weight: 700;
   color: #000000;
 
   background-color: #ffffff;
+
+  transition: max-height 0.15s ease-out;
+}
+
+.modal-show{
+  max-height: 800px;
+  
+  transition: max-height 0.25s ease-in;
 }
 
 .search-hotel-form{
@@ -426,6 +436,7 @@ input[type="checkbox"].visually-hidden{
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: 55px;
 }
 
 .modal-hotels input{
