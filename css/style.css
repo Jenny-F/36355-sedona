@@ -755,6 +755,7 @@ input[type="checkbox"].visually-hidden{
 
 .price-controls input {
   width: 50px;
+  height: 25px;
   margin: 0;
 
   color: inherit;
@@ -1124,22 +1125,20 @@ input[type="checkbox"].visually-hidden{
   margin-bottom: -125px;
   padding: 0;
   height: 600px;
+
+  background-image: url("../img/content/map.png");
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .map iframe {
   position: relative;
   z-index: 2;
 
+  width: 100%;
+
   border: none;
-}
-
-.map p {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-
-  margin: 0;
 }
 
 .main-footer{
