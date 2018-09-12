@@ -36,6 +36,7 @@ input[type="checkbox"].visually-hidden{
 }
 
 .container{
+  position: relative;
   max-width: 1200px;
   min-width: 768px;
   margin: 0 auto;
@@ -117,7 +118,7 @@ input[type="checkbox"].visually-hidden{
   background-image: url("../img/decorative/intro-polygon.svg"), url("../img/decorative/intro-background.jpg");
   background-position: 50% 100%, 0 30%;
   background-repeat: no-repeat, no-repeat;
-  background-size: 100% 57px, 100%;
+  background-size: 100%, 100%;
 }
 
 .reasons{
@@ -410,7 +411,6 @@ input[type="checkbox"].visually-hidden{
 
           box-sizing: border-box;
   width: 570px;
-  margin: 0 auto;
   margin-left: -284px;
   padding: 0;
   max-height: 0;
