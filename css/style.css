@@ -63,11 +63,6 @@ input[type="checkbox"].visually-hidden{
 }
 
 .main-navigation{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; 
   width: 88%;
   padding: 15px 0;
   
@@ -78,11 +73,41 @@ input[type="checkbox"].visually-hidden{
   color: #000000;
 }
 
-.main-navigation a{
+.site-navigation{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; 
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-navigation li{
+  width: 128px;
+}
+
+.site-navigation li:nth-child(1),
+.site-navigation li:nth-child(2){
+  text-align: left;
+}
+
+.site-navigation li:nth-child(2){
+  margin-right: 19%;
+}
+
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4){
+  text-align: right;
+}
+
+.site-navigation a{
   color: #000000;
 }
 
-.main-navigation a:nth-child(1){
+/*.main-navigation a:nth-child(1){
   margin-right: 14%;
 }
 
@@ -92,7 +117,7 @@ input[type="checkbox"].visually-hidden{
 
 .main-navigation a:nth-child(2){
   margin-right: auto;
-}
+}*/
 
 .main-navigation a:hover,
 .main-navigation a:focus{
@@ -115,10 +140,10 @@ input[type="checkbox"].visually-hidden{
   text-align: center;
 
   background-color: #79a7cb;
-  background-image: url("../img/decorative/intro-polygon.svg"), url("../img/decorative/intro-background.jpg");
+  background-image: url("../img/decorative/intro-polygon.png"), url("../img/decorative/intro-background.jpg");
   background-position: 50% 100%, 0 30%;
   background-repeat: no-repeat, no-repeat;
-  background-size: 100%, 100%;
+  background-size: 100% 57px, 100%;
 }
 
 .reasons{
