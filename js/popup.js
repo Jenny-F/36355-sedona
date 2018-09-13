@@ -12,6 +12,6 @@ btn.addEventListener("click", function (evt) {
 form.addEventListener("submit", function (evt) {
   if (!arrivalDate.value || !dapertireDate.value) {
     evt.preventDefault();
-    console.log("Нужно ввести даты заезда и выезда");
+    popup.classList.add("modal-error");
   }
 });
