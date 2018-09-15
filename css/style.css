@@ -91,12 +91,11 @@ input[type="checkbox"].visually-hidden{
   width: 15%;
 }
 
-.site-navigation li:nth-child(1),
-.site-navigation li:nth-child(2){
+.site-navigation li:nth-child(4n+1),
+.site-navigation li:nth-child(4n+2){
   text-align: left;
 }
 
-.site-navigation li:nth-child(2),
 .site-navigation li:nth-of-type(4n + 2) {
   margin-right: 24%;
 }
@@ -105,8 +104,6 @@ input[type="checkbox"].visually-hidden{
   margin: 0;
 }
 
-.site-navigation li:nth-child(3),
-.site-navigation li:nth-child(4),
 .site-navigation li:nth-child(4n + 3),
 .site-navigation li:nth-child(4n + 4) {
   text-align: right;
