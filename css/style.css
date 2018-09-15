@@ -77,11 +77,8 @@ input[type="checkbox"].visually-hidden{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; 
+      flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -89,6 +86,9 @@ input[type="checkbox"].visually-hidden{
 
 .site-navigation li{
   width: 128px;
+  width: 19%;
+  margin-right: 8%;
+  width: 15%;
 }
 
 .site-navigation li:nth-child(1),
@@ -96,30 +96,25 @@ input[type="checkbox"].visually-hidden{
   text-align: left;
 }
 
-.site-navigation li:nth-child(2){
-  margin-right: 19%;
+.site-navigation li:nth-child(2),
+.site-navigation li:nth-of-type(4n + 2) {
+  margin-right: 24%;
+}
+
+.site-navigation li:nth-of-type(4n) {
+  margin: 0;
 }
 
 .site-navigation li:nth-child(3),
-.site-navigation li:nth-child(4){
+.site-navigation li:nth-child(4),
+.site-navigation li:nth-child(4n + 3),
+.site-navigation li:nth-child(4n + 4) {
   text-align: right;
 }
 
 .site-navigation a{
   color: #000000;
 }
-
-/*.main-navigation a:nth-child(1){
-  margin-right: 14%;
-}
-
-.main-navigation a:nth-child(3){
-  margin-right: 15.7%;
-}
-
-.main-navigation a:nth-child(2){
-  margin-right: auto;
-}*/
 
 .main-navigation a:hover,
 .main-navigation a:focus{
@@ -532,7 +527,7 @@ input[type="checkbox"].visually-hidden{
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 57px 55px;
+  margin: 55px;
 }
 
 .modal-hotels input::-ms-clear {
@@ -561,6 +556,10 @@ input[type="checkbox"].visually-hidden{
   border: solid 2px #e5e5e5;
 }
 
+.modal-hotels button{
+  font-size: 0;
+}
+
 .input-date{
   display: -webkit-box;
   display: -ms-flexbox;
@@ -586,6 +585,7 @@ input[type="checkbox"].visually-hidden{
 
 .btn-for-input{
   position: absolute;
+  padding: 0 7px;
 
   background-color: transparent;
 }
@@ -652,13 +652,18 @@ input[type="checkbox"].visually-hidden{
   margin-right: 39px;
 }
 
+.reduce-number-btn,
+.increase-number-btn{
+  padding-top: 3px;
+}
+
 .input-adults-number .reduce-number-btn{
   top: 8px;
   left: 120px;
 }
 
 .input-adults-number .increase-number-btn{
-  top: 9px;
+  top: 8px;
   right: 10px;
 }
 
@@ -672,7 +677,7 @@ input[type="checkbox"].visually-hidden{
 }
 
 .input-children-number .increase-number-btn{
-  top: 9px;
+  top: 8px;
   right: 7px;
 }
 
