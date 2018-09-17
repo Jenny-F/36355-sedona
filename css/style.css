@@ -219,7 +219,7 @@ input[type="checkbox"].visually-hidden{
 .reason-text p{
   padding: 0;
   margin: 0;
-  width: 80%;
+  width: 75.7%;
 }
 
 .reason-photo{
@@ -553,10 +553,6 @@ input[type="checkbox"].visually-hidden{
   border: solid 2px #e5e5e5;
 }
 
-.modal-hotels button{
-  font-size: 0;
-}
-
 .input-date{
   display: -webkit-box;
   display: -ms-flexbox;
@@ -639,6 +635,7 @@ input[type="checkbox"].visually-hidden{
   padding: 6px 45px;
 
   text-align: center;
+  line-height: 23px;
 }
 
 .input-adults-number{
@@ -649,18 +646,13 @@ input[type="checkbox"].visually-hidden{
   margin-right: 39px;
 }
 
-.reduce-number-btn,
-.increase-number-btn{
-  padding-top: 3px;
-}
-
 .input-adults-number .reduce-number-btn{
   top: 8px;
   left: 120px;
 }
 
 .input-adults-number .increase-number-btn{
-  top: 8px;
+  top: 9px;
   right: 10px;
 }
 
@@ -674,7 +666,7 @@ input[type="checkbox"].visually-hidden{
 }
 
 .input-children-number .increase-number-btn{
-  top: 8px;
+  top: 9px;
   right: 7px;
 }
 
@@ -1237,7 +1229,7 @@ input[type="checkbox"].visually-hidden{
   background-repeat: space;
 }
 
-.hotels-item:nth-last-of-type(1) .stars{
+.hotels-item:nth-of-type(1) .stars{
   width: 89px;
 }
 
@@ -1301,21 +1293,20 @@ input[type="checkbox"].visually-hidden{
   display: -ms-flexbox;
 
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .hashtag{
   width: 33%;
   margin: 0;
+  margin-top: 10px;
 
   font-size: 21px;
   font-weight: 700;
 }
 
 .footer-social{
-  width: 33%
+  width: 33%;
+  margin-top: 2px;
 }
 
 .footer-social ul{
@@ -1404,8 +1395,8 @@ li:nth-child(3) .social-btn::before{
 }
 
 .footer-copyright div{
-  width: 105px;
-  padding-right: 8px;
+  width: 90px;
+  margin-left: 15px;
 
   font-size: 14px;
   line-height: 26px;
@@ -1413,7 +1404,7 @@ li:nth-child(3) .social-btn::before{
 }
 
 .copyright-link{
-  margin-top: 3px;
+  margin-top: 4px;
 }
 
 .copyright-link svg{
